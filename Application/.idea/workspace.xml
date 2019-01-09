@@ -2,32 +2,149 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f51c9181-e19d-4ae9-84a3-596e6e1f97cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/contextinterfaces/IAuthenticationContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/mssqlcontexts/AuthenticationMSSQLContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/data/testcontexts/AuthenticationTestContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Match.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Playblock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/helperclasses/helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/repositories/AuthenticationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/RestServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/models/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/responses/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/services/Authentication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/WebSocketServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/packages/Package.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/logic/repositories/AuthenticationRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_sqlserver_mssql_jdbc_7_0_0_jre8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_client_api_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_annotations_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_continuation_9_1_1_v20140108.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_jndi_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_plus_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_client_impl_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_server_impl_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_server_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_servlet_9_4_7_v20170914.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_antlr_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_asm_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_core_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_moxy_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_jetty_http_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_entity_filtering_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_moxy_2_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mindrot_jbcrypt_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/IQuizGameApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/QuizGameApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/contextinterfaces/IQuestionContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/mssqlcontexts/QuizAuthenticationMSSQLContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/mssqlcontexts/QuizMSSQLContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/mssqlcontexts/QuizQuestionMSSQLContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/testcontexts/QuizAuthenticationTestContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/testcontexts/QuizQuestionTestContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enums/AnswerState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enums/MessageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/enums/UsageState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logic/repositories/QuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logic/repositories/helperclasses/Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logic/repositories/helperclasses/PasswordHasher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizgame/IQuizGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizgame/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/quizgame/QuizGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/resources/GUIQuiz.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/ReceiveDataJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/RestContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/responses/AuthenticationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/responses/QuestionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/services/AuthenticationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/services/QuestionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/viewmodels/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restapi/viewmodels/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/ClientSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/MatchPlayers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/ServerSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/messages/AnswerResultMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/messages/AnsweredMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/messages/InitMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/messages/LastQuestionMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/messages/MatchDoneMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/messages/MatchMadeMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/messages/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/messages/PlayerReadyMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websockets/messages/StartGameMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/logic/repositories/QuestionRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/AccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/AnswerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/MatchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/PlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/QuestionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/websockets/MessageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/contextinterfaces/IAuthenticationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/contextinterfaces/IAuthenticationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/mssqlcontexts/AuthenticationMSSQLContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/testcontexts/AuthenticationTestContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Playblock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Playblock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/helperclasses/helper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/repositories/AuthenticationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/repositories/AuthenticationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restapi/RestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restapi/RestServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restapi/models/UserModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restapi/responses/Response.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restapi/services/Authentication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websockets/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/websockets/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/websockets/packages/Package.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/logic/repositories/AuthenticationRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logic/repositories/AuthenticationRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/contextinterfaces/IAuthenticationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data/contextinterfaces/IAuthenticationContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/mssqlcontexts/AuthenticationMSSQLContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data/testcontexts/AuthenticationTestContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Answer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Playblock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Playblock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/helperclasses/helper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/repositories/AuthenticationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/repositories/AuthenticationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restapi/RestServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/restapi/RestServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restapi/models/UserModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restapi/responses/Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/restapi/services/Authentication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websockets/WebSocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/websockets/WebSocketServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/websockets/packages/Package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentatie/.klassendiagram Big Idea Quiz.vpp.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentatie/Software Architecture Document.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Documentatie/Software Architecture Document.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentatie/Systeemtestplan.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Documentatie/Systeemtestplan.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentatie/klassendiagram Big Idea Quiz.vpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Documentatie/klassendiagram Big Idea Quiz.vpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,21 +153,218 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/QuizBigIdea$Main.ic" NAME="Main Coverage Results" MODIFIED="1546807984848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>quizgame.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/restapi/services/AuthenticationService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/repositories/helperclasses/Algorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/restapi/ReceiveDataJson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/repositories/AuthenticationRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/data/contextinterfaces/IAuthenticationContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/websockets/ServerSocket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/logic/repositories/AuthenticationRepositoryTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/repositories/helperclasses/PasswordHasher.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/restapi/services/QuestionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/restapi/viewmodels/Register.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/restapi/RestContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>this.enem</find>
+      <find>playerAnswers</find>
+      <find>showA</find>
+      <find>getQuestions</find>
+      <find>restAPI</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/data/contextinterfaces/IAuthenticationContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/mssqlcontexts/QuizAuthenticationMSSQLContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/restapi/RestServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/repositories/AuthenticationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/quizgame/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/mssqlcontexts/QuizMSSQLContext.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/GUIQuiz.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/restapi/RestAuthenticationContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/restapi/services/QuestionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/enums/AnswerState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/enums/UsageState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Answer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/websockets/WebSocketServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/websockets/messages/PlayerReadyMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/websockets/messages/InitMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/websockets/messages/AnswerResultMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/mssqlcontexts/QuizQuestionMSSQLContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Match.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Playblock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/websockets/messages/MatchDoneMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/enums/MessageType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/websockets/ClientSocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/repositories/helperclasses/ButtonCounter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/websockets/ServerSocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/quizgame/IQuizAuthenticationGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/quizgame/Quiz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/quizgame/QuizAuthenticationGame.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/AccountTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/MatchTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/Question.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/Player.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/AnswerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/testcontexts/QuizAuthenticationTestContext.java" />
+        <option value="$PROJECT_DIR$/src/test/java/logic/repositories/AuthenticationRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/contextinterfaces/IQuestionContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/data/testcontexts/QuizQuestionTestContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/repositories/QuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/logic/repositories/QuestionServiceRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/websockets/Message.java" />
+        <option value="$PROJECT_DIR$/src/test/java/websockets/MessageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/repositories/helperclasses/Algorithm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/restapi/viewmodels/Register.java" />
+        <option value="$PROJECT_DIR$/src/main/java/restapi/RestContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/quizgame/IQuizGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/QuizGameApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/IQuizGameApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/quizgame/QuizGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/restapi/services/AuthenticationService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -59,10 +373,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="25" />
-    <option name="width" value="1750" />
-    <option name="height" value="980" />
+    <option name="x" value="235" />
+    <option name="y" value="140" />
+    <option name="width" value="1900" />
+    <option name="height" value="1130" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -71,7 +385,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,20 +414,158 @@
               <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="contextinterfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="mssqlcontexts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="testcontexts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="helperclasses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="quizgame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="restapi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="restapi" type="462c0819:PsiDirectoryNode" />
+              <item name="responses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="restapi" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="websockets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="websockets" type="462c0819:PsiDirectoryNode" />
+              <item name="messages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizBigIdea" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547032062698" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SE3Services/SE3Services/Services" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Software Big Idea\Application\src\main\java\resources" />
+      <recent name="D:\Software Big Idea\Application\src\main\java\resources\Game" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -128,6 +579,84 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.QuizGameApplication">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="quizgame.Main" />
+      <module name="Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="quizgame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuizGameApplication" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.QuizGameApplication" />
+      <module name="Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="restapi.RestServer" />
+      <module name="Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="restapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebSocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="websockets.WebSocketServer" />
+      <module name="Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="websockets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Application" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Application" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.WebSocketServer" />
+      <item itemvalue="Application.RestServer" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.QuizGameApplication" />
+      <item itemvalue="JUnit.All in Application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QuizGameApplication" />
+        <item itemvalue="Application.RestServer" />
+        <item itemvalue="Application.WebSocketServer" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in Application" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -139,54 +668,540 @@
       <option name="presentableId" value="Default" />
       <updated>1543392589683</updated>
       <workItem from="1543392595774" duration="98000" />
+      <workItem from="1543399989497" duration="5519000" />
+      <workItem from="1543825714380" duration="343000" />
+      <workItem from="1543826696381" duration="5918000" />
+      <workItem from="1543956338016" duration="3367000" />
+      <workItem from="1544000263128" duration="15549000" />
+      <workItem from="1544432788128" duration="10949000" />
+      <workItem from="1544518446829" duration="531000" />
+      <workItem from="1544779574626" duration="8750000" />
+      <workItem from="1544972290461" duration="17750000" />
+      <workItem from="1545001739550" duration="31223000" />
+      <workItem from="1545157522046" duration="5117000" />
+      <workItem from="1546513530735" duration="5195000" />
+      <workItem from="1546708701346" duration="59060000" />
+      <workItem from="1546844461066" duration="115807000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="QuestionRepositoryTest - 2018.12.10 at 11h 43m 02s.xml">
+      <configuration name="QuestionRepositoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="models_in_Application - 2019.01.09 at 00h 24m 33s.xml">
+      <configuration name="models in Application" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="models_in_Application - 2019.01.09 at 00h 26m 11s.xml">
+      <configuration name="models in Application" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="models_in_Application - 2019.01.09 at 00h 34m 35s.xml">
+      <configuration name="models in Application" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="models_in_Application - 2019.01.09 at 00h 49m 02s.xml">
+      <configuration name="models in Application" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="models_in_Application - 2019.01.09 at 00h 49m 44s.xml">
+      <configuration name="models in Application" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="models_in_Application - 2019.01.09 at 00h 50m 21s.xml">
+      <configuration name="models in Application" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="logic_repositories_in_Application - 2019.01.09 at 01h 00m 42s.xml">
+      <configuration name="logic.repositories in Application" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuestionServiceRepositoryTest - 2019.01.09 at 01h 07m 58s.xml">
+      <configuration name="QuestionServiceRepositoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Application - 2019.01.09 at 01h 13m 50s.xml">
+      <configuration name="All in Application" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98000" />
+    <option name="totallyTimeSpent" value="285176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18322147" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" weight="0.3295302" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3295302" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3295302" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.3295302" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/quizgame/QuizGame.java</url>
+          <line>103</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this" />
+        <watch expression="this" />
+        <watch expression="this" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/logic/repositories/AuthenticationRepositoryTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/websocket-common/9.4.7.v20170914/websocket-common-9.4.7.v20170914-sources.jar!/org/eclipse/jetty/websocket/common/events/annotated/CallableMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.4.7.v20170914/javax-websocket-client-impl-9.4.7.v20170914-sources.jar!/org/eclipse/jetty/websocket/jsr356/annotations/OnMessageTextCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/quizgame/IQuizAuthenticationGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websockets/messages/MatchDoneMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websockets/messages/InitMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websockets/messages/AnswerResultMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/AccountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#1065#1066#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Match.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/MatchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/PlayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="62" lean-forward="true" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/AnswerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/QuestionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/mssqlcontexts/QuizQuestionMSSQLContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-778">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/logic/repositories/AuthenticationRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/logic/repositories/QuestionRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+          <folding>
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websockets/messages/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websockets/WebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/quizgame/QuizAuthenticationGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/websockets/MessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/restapi/responses/AuthenticationResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/quizgame/Quiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/restapi/RestServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_191/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="2565" selection-start-line="2565" selection-end-line="2565" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/GUIQuiz.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="85" column="133" lean-forward="true" selection-start-line="85" selection-start-column="133" selection-end-line="85" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/contextinterfaces/IQuestionContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/testcontexts/QuizQuestionTestContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/testcontexts/QuizAuthenticationTestContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/repositories/QuestionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/quizgame/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/quizgame/IQuizGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="37" column="25" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/IQuizGameApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/mssqlcontexts/QuizAuthenticationMSSQLContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/QuizGameApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5146">
+          <caret line="430" column="19" selection-start-line="430" selection-start-column="19" selection-end-line="430" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7196#7197#0" expanded="true" />
+            <element signature="e#7276#7277#0" expanded="true" />
+            <element signature="e#8017#8018#0" expanded="true" />
+            <element signature="e#8057#8058#0" expanded="true" />
+            <element signature="e#8120#8121#0" expanded="true" />
+            <element signature="e#8164#8165#0" expanded="true" />
+            <element signature="e#13295#13296#0" expanded="true" />
+            <element signature="e#13340#13341#0" expanded="true" />
+            <element signature="e#14426#14427#0" expanded="true" />
+            <element signature="e#14464#14465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.7/jersey-server-2.7-sources.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="185" selection-start-line="185" selection-end-line="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/quizgame/QuizGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2-sources.jar!/com/google/gson/Gson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="582" selection-start-line="582" selection-end-line="582" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/restapi/viewmodels/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/restapi/services/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/restapi/RestContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/restapi/ReceiveDataJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/repositories/helperclasses/Algorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/restapi/services/AuthenticationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/repositories/AuthenticationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/data/contextinterfaces/IAuthenticationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websockets/ServerSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/repositories/helperclasses/PasswordHasher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>

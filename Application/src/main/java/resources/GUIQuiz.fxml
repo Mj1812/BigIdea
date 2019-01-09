@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="860.0" prefWidth="1406.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.QuizGameApplication">
+   <children>
+      <TitledPane fx:id="pnEnemyBlock" animated="false" collapsible="false" layoutX="28.0" layoutY="41.0" prefHeight="772.0" prefWidth="461.0" text="EnemyBlock">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btQuestionTwo" layoutX="-1.0" layoutY="209.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="461.0" text="Question 2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btQuestionThree" layoutX="-1.0" layoutY="343.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="461.0" text="Question 3">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btQuestionFour" layoutY="472.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="461.0" text="Question 4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btQuestionFive" layoutY="605.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="461.0" text="Question 5">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btQuestionOne" layoutY="80.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="461.0" text="Question 1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TitledPane fx:id="pnPlayerBlock" animated="false" collapsible="false" layoutX="592.0" layoutY="41.0" prefHeight="772.0" prefWidth="461.0" text="PlayerBlock">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btAnswerOne" layoutX="-1.0" layoutY="209.0" mnemonicParsing="false" onAction="#onAnswerOne_Click" prefHeight="92.0" prefWidth="461.0" text="Answer 1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btAnswerTwo" layoutX="-1.0" layoutY="343.0" mnemonicParsing="false" onAction="#onAnswerTwo_Click" prefHeight="91.0" prefWidth="461.0" text="Answer 2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btAnswerThree" layoutY="472.0" mnemonicParsing="false" onAction="#onAnswerThree_Click" prefHeight="92.0" prefWidth="461.0" text="Answer 3">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btAnswerFour" layoutY="605.0" mnemonicParsing="false" onAction="#onAnswerFour_Click" prefHeight="92.0" prefWidth="461.0" text="Answer 4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lbQuestion" layoutX="-2.0" layoutY="49.0" prefHeight="106.0" prefWidth="461.0" text="Question" textAlignment="RIGHT" wrapText="true">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <Button fx:id="btStartGame" layoutX="1112.0" layoutY="440.0" mnemonicParsing="false" onAction="#onStartGame_Click" prefHeight="54.0" prefWidth="205.0" text="Start Game" />
+      <Button fx:id="btSkip" layoutX="1112.0" layoutY="534.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="205.0" text="Skip Question" />
+      <Button fx:id="btHint" layoutX="1112.0" layoutY="624.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="205.0" text="Hint" />
+      <Button fx:id="btNewGame" layoutX="1112.0" layoutY="714.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="205.0" text="New Game" />
+      <Button fx:id="btLogin" layoutX="1112.0" layoutY="352.0" mnemonicParsing="false" onAction="#onLogin_Click" prefHeight="54.0" prefWidth="205.0" text="Login" />
+      <TextField fx:id="tfUsername" layoutX="1112.0" layoutY="71.0" promptText="Username" />
+      <RadioButton fx:id="rbMultiPlayer" layoutX="1112.0" layoutY="213.0" mnemonicParsing="false" text="MultiPlayer" />
+      <PasswordField fx:id="tfPassword" layoutX="1112.0" layoutY="120.0" promptText="Password" />
+      <Button fx:id="btRegister" layoutX="1112.0" layoutY="253.0" mnemonicParsing="false" onAction="#onRegister_Click" prefHeight="54.0" prefWidth="205.0" text="Register" />
+      <PasswordField fx:id="tfConfirmPassword" layoutX="1112.0" layoutY="166.0" promptText="Confirm Password" />
+   </children>
+</AnchorPane>

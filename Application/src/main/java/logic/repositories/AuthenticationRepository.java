@@ -2,24 +2,33 @@ package logic.repositories;
 
 import data.contextinterfaces.IAuthenticationContext;
 import domain.Account;
+import restapi.viewmodels.Login;
+import restapi.viewmodels.Register;
 
 public class AuthenticationRepository {
     //region Fields
-    private IAuthenticationContext context;
+    private IAuthenticationContext iAuthenticationContext;
     //endregion
 
     //region Constructors
-    public AuthenticationRepository(IAuthenticationContext context){
-        this.context = context;
+    public AuthenticationRepository(IAuthenticationContext iAuthenticationContext){
+        this.iAuthenticationContext = iAuthenticationContext;
     }
     //endregion
 
     //region Methods
-    public Account loginAccount(Account account){
-        return context.loginAccount(account);
+    public Account loginAccount(Login login){
+        return iAuthenticationContext.loginAccount(login.getUsername(), login.getPassword());
     }
 
-    public Account registerAccount(Account account){return context.registerAccount(account); }
+    public Account registerAccount(Register register){
+        if(register.getPassword().equals(register.getConfirmPassword())) {
+            return iAuthenticationContext.registerAccount(register.getUsername(), register.getPassword());
+        }
+        else{
+            return null;
+        }
+    }
 
 
     //endregion

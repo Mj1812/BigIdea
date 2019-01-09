@@ -5,15 +5,18 @@ import domain.Account;
 public interface IAuthenticationContext {
     /**
      * Signs an account in
-     * @param account An account filled with username and password
+     * @param name The name of the player
+     * @param password The password of the player
      * @return Account with the accountId
      */
-    Account loginAccount(Account account);
+    Account loginAccount(String name, String password);
 
     /**
      * Signs an account up
-     * @param account An account filled with username, password and confirmed password
+     * @param name The name of the player
+     * @param password The password of the player
      * @return Account with the new accountId
      */
-    Account registerAccount(Account account);
+    Account registerAccount(String name, String password);
+
 }

@@ -1,37 +1,50 @@
 package domain;
 
+import GUI.IQuizGameApplication;
+import quizgame.IQuizGame;
+
 public class Account {
     //region Fields
     private int id;
-    private String username;
+    private String email;
+    private String name;
     private String password;
-    private String confirmPassword;
+    private IQuizGameApplication application;
     //endregion
 
     //region Constructors
-    public Account(int id, String username, String password) {
+    public Account(int id, String name, String password, IQuizGameApplication application) {
         this.id = id;
-        this.username = username;
+        this.name = name;
         this.password = password;
+        this.application = application;
     }
 
-    public Account(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
-    public Account(int id, String username, String password, String confirmPassword) {
+    public Account(int id, String name, String password) {
         this.id = id;
-        this.username = username;
+        this.name = name;
         this.password = password;
-        this.confirmPassword = confirmPassword;
     }
 
-    public Account(String username, String password, String confirmPassword) {
-        this.username = username;
+    public Account(int id, String email, String name, String password) {
+        this.id = id;
+        this.email = email;
+        this.name = name;
         this.password = password;
-        this.confirmPassword = confirmPassword;
     }
+
+    public Account(int id,String name, IQuizGameApplication application) {
+        this.id = id;
+        this.name = name;
+        this.application = application;
+
+    }
+
+    public Account(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     //endregion
 
     //region Properties
@@ -39,16 +52,24 @@ public class Account {
         return this.id;
     }
 
-    public String getUsername() {
-        return this.username;
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     public String getPassword() {
         return this.password;
     }
 
-    public String getConfirmPassword() {
-        return confirmPassword;
+    public IQuizGameApplication getApplication() {
+        return application;
     }
     //endregion
 }
